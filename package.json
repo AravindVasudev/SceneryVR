@@ -1,0 +1,25 @@
+{
+  "name": "scenery_vr_demo",
+  "version": "0.1.0",
+  "description": "A simple test scenery built in WebVR.",
+  "main": "index.html",
+  "dependencies": {
+    "budo": "^9.4.7"
+  },
+  "devDependencies": {
+    "budo": "^9.4.7"
+  },
+  "scripts": {
+    "start": "budo index.html --open --live"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AravindVasudev/SceneryVR.git"
+  },
+  "author": "aravindvasudev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AravindVasudev/SceneryVR/issues"
+  },
+  "homepage": "https://github.com/AravindVasudev/SceneryVR#readme"
+}

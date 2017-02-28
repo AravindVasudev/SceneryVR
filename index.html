@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>SceneryVR</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <!-- A-Frame 0.5.0 -->
+  <script src="https://aframe.io/releases/0.5.0/aframe.min.js"></script>
+</head>
+<body>
+  <a-scene>
+    <a-assets></a-assets>
+
+    <!-- adds sky and ground -->
+    <a-sky color="#87ceeb" radius=10></a-sky>
+    <a-plane rotation="-90 0 0" width="20" height="20" color="#005C09"></a-plane>
+
+    <!-- add the sun -->
+    <a-sphere color="yellow"
+      geometry="primitive: sphere; radius: 0.84"
+      position="0.0 6.79 -7.96"></a-sphere>
+
+    <!-- adds a tree -->
+    <a-box color="#8B4513"
+      height="4"
+      width="1"
+      depth="1"
+      position="-3 2 -3"
+      ></a-box>
+    <a-box color="green"
+      height="1"
+      width="4"
+      depth="4"
+      position="-3 4 -3"
+      ></a-box>
+
+    <!-- adds a mountain  -->
+    <a-sphere color="#8B4513"
+      geometry="mergeTo:null;primitive:sphere;radius:2"
+      material="color:#663300;normalScale:{&quot;x&quot;:1,&quot;y&quot;:1}"
+      position="0 0.42 5.22"></a-sphere>
+    <a-cone color="#8B4513"
+      radius-bottom="2"
+      radius-top="0.0"
+      position="0 0.61 5.25"
+      scale="3 3 3"
+      material="color:#663300;normalScale:{&quot;x&quot;:1,&quot;y&quot;:1}"
+      geometry="mergeTo:null;primitive:cone;radiusBottom:2.16;radiusTop:0.32"></a-cone>
+
+    <!-- lightings  -->
+    <a-light type="ambient" color="#445451"></a-light>
+    <a-light type="point" intensity="2" light="type:point;target:null" position="0.0 5.19 -6.08"></a-light>
+  </a-scene>
+</body>
+</html>
